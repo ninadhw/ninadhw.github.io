@@ -1,16 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
-  <title id="title">Ninad Watve monogram</title>
-  <desc id="desc">A refined serif NW monogram crossed by a slender diagonal pencil.</desc>
-  <rect width="180" height="180" fill="none"/>
-  <g fill="#24231f" font-family="Baskerville, 'Times New Roman', serif" font-size="105" font-weight="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title">
+  <title id="title">NW monogram with pencil</title>
+  <g fill="#fff" font-family="Baskerville, 'Times New Roman', serif" font-size="105" font-weight="400">
     <text x="18" y="119">N</text>
     <text x="78" y="145">W</text>
   </g>
   <g transform="translate(112 23) rotate(34)">
-    <rect x="-3.2" y="0" width="6.4" height="119" rx="1.1" fill="#a58c63"/>
-    <rect x="-3.2" y="0" width="6.4" height="12" fill="#24231f"/>
-    <path d="M-3.2 119 L3.2 119 L0 129 Z" fill="#24231f"/>
-    <path d="M-1.1 126.2 L1.1 126.2 L0 129 Z" fill="#f4f2ed"/>
-    <path d="M-3.2 13 H3.2" stroke="#f4f2ed" stroke-width="1"/>
+    <rect x="-3.2" y="0" width="6.4" height="119" rx="1.1" fill="#bdbdbd"/>
+    <rect x="-3.2" y="0" width="6.4" height="12" fill="#fff"/>
+    <path d="M-3.2 119 L3.2 119 L0 129 Z" fill="#fff"/>
+    <path d="M-1.1 126.2 L1.1 126.2 L0 129 Z" fill="#000"/>
+    <path d="M-3.2 13 H3.2" stroke="#000" stroke-width="1"/>
   </g>
 </svg>
