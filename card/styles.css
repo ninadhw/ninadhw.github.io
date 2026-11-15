@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=EB+Garamond:wght@400;500;600&display=swap');
+
+:root {
+  color-scheme: light;
+  --paper: #f4f2ed;
+  --ink: #24231f;
+  --muted: #77746c;
+  --line: #d8d4ca;
+  --accent: #a58c63;
+  --serif: "EB Garamond", "Iowan Old Style", "Baskerville", Georgia, serif;
+  --mono: "DM Mono", "SFMono-Regular", Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { min-height: 100%; background: var(--paper); }
+body {
+  margin: 0; min-height: 100vh; display: grid; place-items: center;
+  padding: 32px 18px; color: var(--ink); background: var(--paper);
+  font-family: var(--serif);
+}
+.card {
+  width: min(100%, 440px); min-height: min(760px, calc(100vh - 64px));
+  padding: clamp(30px, 7vw, 54px) clamp(25px, 8vw, 58px) 28px;
+  display: flex; flex-direction: column; align-items: center;
+  border: 1px solid var(--line); background: rgba(255,255,255,.22);
+}
+.brand { display: flex; flex-direction: column; align-items: center; }
+.brand-mark { width: 116px; height: 116px; display: block; }
+.brand-rule { width: 34px; height: 1px; margin: 23px 0 13px; background: var(--accent); }
+.eyebrow, .site-credit, .location, .save-note {
+  font-family: var(--mono); text-transform: uppercase; letter-spacing: .15em;
+}
+.eyebrow { margin: 0; color: var(--muted); font-size: 9px; }
+.identity { margin: 42px 0 0; text-align: center; }
+h1 { margin: 0; font-size: clamp(42px, 12vw, 56px); line-height: .98; font-weight: 400; letter-spacing: -.035em; }
+.motto { margin: 15px 0 0; color: var(--muted); font-size: 14px; letter-spacing: .055em; }
+.motto span { color: var(--accent); padding: 0 3px; }
+.tagline { max-width: 290px; margin: 15px auto 0; color: var(--muted); font-size: 16px; line-height: 1.5; }
+.contact-links {
+  width: 100%; margin-top: 48px; border-top: 1px solid var(--line);
+}
+.contact-link {
+  min-height: 54px; display: flex; justify-content: space-between; align-items: center;
+  padding: 0 2px; border-bottom: 1px solid var(--line); color: var(--ink);
+  text-decoration: none; font-size: 19px; transition: color .18s ease;
+}
+.contact-link:hover, .contact-link:focus-visible { color: var(--accent); }
+.contact-link .arrow { color: var(--accent); font-family: var(--mono); font-size: 14px; }
+.save-contact { margin-top: 36px; text-align: center; }
+.save-button {
+  display: inline-flex; gap: 10px; align-items: center; justify-content: center;
+  min-width: 190px; padding: 13px 19px; border: 1px solid var(--ink);
+  border-radius: 0; color: var(--paper); background: var(--ink);
+  font: 12px var(--mono); letter-spacing: .07em; text-transform: uppercase; cursor: pointer;
+  transition: background .18s ease, color .18s ease;
+}
+.save-button:hover, .save-button:focus-visible { color: var(--ink); background: transparent; }
+.save-icon { font-size: 18px; line-height: 10px; }
+.save-note { margin: 11px 0 0; color: var(--muted); font-size: 8px; letter-spacing: .11em; }
+.footer { width: 100%; margin-top: auto; padding-top: 48px; text-align: center; }
+.location { margin: 0 0 12px; color: var(--muted); font-size: 9px; }
+.site-credit { margin: 0; color: #99958b; font-size: 8px; }
+.site-credit span { color: var(--accent); padding: 0 4px; }
+.noscript { position: fixed; bottom: 8px; left: 12px; right: 12px; text-align: center; font: 12px sans-serif; }
+@media (max-width: 380px) {
+  body { padding: 12px; }
+  .card { min-height: calc(100vh - 24px); padding: 28px 23px 22px; }
+  .identity { margin-top: 30px; }
+  .contact-links { margin-top: 36px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }

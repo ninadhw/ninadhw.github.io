@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#f4f2ed"/>
+  <g fill="#24231f" font-family="Baskerville, 'Times New Roman', serif" font-size="39">
+    <text x="3" y="42">N</text><text x="27" y="52">W</text>
+  </g>
+  <g transform="translate(42 5) rotate(34)">
+    <rect x="-1.4" y="0" width="2.8" height="48" fill="#a58c63"/>
+    <path d="M-1.4 48 H1.4 L0 53 Z" fill="#24231f"/>
+  </g>
+</svg>
