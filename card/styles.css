@@ -70,3 +70,25 @@ h1 {
   .mark { width: 94px; height: 94px; margin-bottom: 38px; }
   .vcard-link { margin-top: 50px; }
 }
+
+
+.contact-button {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 16px 36px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    color: #000000;
+    background: #ffffff;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.contact-button:hover {
+    background: transparent;
+    color: #ffffff;
+}
